@@ -4,8 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
-    <link rel="stylesheet" href="style.css"/>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: "Poppins", sans-serif;
+}
+.outer-wrap{
+    background-color:#212426;
+    width:100%;
+    min-height:100vh;
+    color:white;
+}
+.inner-wrap{
+    padding:10px;
+}
+.navigation-box{
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.prev-icon{
+   font-size:30px;
+   color:#d1d1d1;
+}
+.archive,.trash,.mail,.ellipsis{
+    font-size:25px;
+    color:#d1d1d1;
+    margin:0px 5px;
+    cursor:pointer;
+}
+.trash:hover{
+    color:red;
+}
+.heading h3{
+    margin-top:20px;
+    margin-left:10px;
+    font-size:22px;
+}
+.heading .arrow{
+    font-size:20px;
+}
+
+.profile{
+    display:flex;
+    margin-top:5px;
+}
+.profile img{
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+}
+.info-section-one{
+    display:flex;
+}
+.info-section-one .profile-name{
+    font-size:20px;
+    font-weight:500;
+    margin-left:6px;
+}
+.info-section-one .profile-time{
+    margin-left:6px;
+    margin-top:5px;
+    color:rgb(194, 189, 189);
+    letter-spacing: 1.5px;
+}
+.info-section-two p{
+    margin-left:6px;
+    margin-top:3px;
+    font-size:14px;
+    letter-spacing: 1px;
+}
+.logo-section{
+    text-align:center;
+    margin-top:20px;
+}
+.logo-section img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+.logo-section p {
+    font-size:25px;
+}
+.main-section{
+   margin-left:10px;
+   margin-top:20px;
+   padding-bottom:40px;
+}
+.main-section .heading{
+    font-weight:700;
+    word-spacing:1.5px;
+}
+
+.greetings-section{
+    margin-top:10px;
+    line-height:35px;
+    font-size:18px;
+}
+.products-section{
+    width: 95%;
+    height:230px;
+    overflow:auto;
+    margin-top:10px;
+}
+.products-section::-webkit-scrollbar {
+    width:10px;
+  }
+  .products-section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  .products-section::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.product{
+    display:flex;
+    justify-content: space-between;
+    margin-top:15px;
+}
+.first-section{
+    display:flex;
+}
+.first-section img{
+    width:60px;
+    height:60px;
+}
+.first-section .name{
+    font-size:20px;
+    margin:auto 15px;
+}
+.price{
+    font-size:18px;
+    margin:auto 15px;
+}
+.bottom-section{
+    margin-top:20px;
+    font-size:18px;
+}
+.address-section{
+    margin-top:20px;
+}
+button{
+    display:flex;
+    margin:auto;
+    margin-top:20px;
+    padding:10px 40px;
+    background-color: #2666CF;
+    color:#FFFFFF;
+    border:none;
+    border-radius:6px;
+    font-size:18px;
+    cursor:pointer;
+}
+button:active{
+    transform: scale(0.8);
+    transition:transform 300ms;
+}
+</style>
 <body>
     <div class="outer-wrap">
         <div class="inner-wrap">
@@ -23,20 +182,6 @@
                 <section class="heading">
                     <h3>NEW ORDER ON MIGRANX</h3>
                 </section>
-            <section class="profile">
-                <div class="image-box">
-                   <img src="./shadow clone jutsu.png" alt="user here"/>
-                </div>
-                <div class="profile-info">
-                    <div class="info-section-one">
-                        <p class="profile-name">Stephen</p>
-                        <p class="profile-time">11:11 AM</p>
-                    </div>
-                    <div class="info-section-two">
-                        <p>to me,iotoo,payodele</p> 
-                    </div>
-                </div>
-            </section>
             <div class="logo-section">
                 <img src="./logo.png" alt="logo"/>
                 <p>MIGRANX</p>
@@ -50,29 +195,29 @@
                 <div class="products-section">
                     <div class="product">
                         <div class="first-section">
-                            <img src="./apple.jpg" alt="product"/>
+                            <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGV8ZW58MHx8MHx8fDA%3D" alt="product"/>
                             <p class="name">Apple</p> 
                         </div>
                         <p class="price">$30</p>
                     </div>
                     <div class="product">
                         <div class="first-section">
-                            <img src="./banana.png" alt="product"/>
+                            <img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFuYW5hfGVufDB8fDB8fHww" alt="product"/>
+                            <p class="name">Banana</p> 
+                        </div>
+                        <p class="price">$30</p>
+                    </div>
+                    <div class="product">
+                        <div class="first-section">
+                            <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGV8ZW58MHx8MHx8fDA%3D" alt="product"/>
                             <p class="name">Apple</p> 
                         </div>
                         <p class="price">$30</p>
                     </div>
                     <div class="product">
                         <div class="first-section">
-                            <img src="./apple.jpg" alt="product"/>
-                            <p class="name">Apple</p> 
-                        </div>
-                        <p class="price">$30</p>
-                    </div>
-                    <div class="product">
-                        <div class="first-section">
-                            <img src="./banana.png" alt="product"/>
-                            <p class="name">Apple</p> 
+                            <img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFuYW5hfGVufDB8fDB8fHww" alt="product"/>
+                            <p class="name">Banana</p> 
                         </div>
                         <p class="price">$30</p>
                     </div>
